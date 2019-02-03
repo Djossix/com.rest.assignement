@@ -13,7 +13,6 @@ import javax.ws.rs.core.MediaType;
 public class UserService {
 
 	UserDao userDao = new UserDao();
-	
 
 	@GET
 	@Path("/adduser")
@@ -26,7 +25,7 @@ public class UserService {
 	@Path("/getuser")
 	@Produces(MediaType.APPLICATION_XML)
 	public List<User> getUsers() throws SQLException, ClassNotFoundException {
-		return userDao.getUser(1);
+		return userDao.getUser();
 	}
 	
 }

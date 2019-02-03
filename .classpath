@@ -37,6 +37,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/osgi-resource-locator-1.0.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/validation-api-2.0.1.Final.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/yasson-1.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Jessica/.m2/repository/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/postgresql-42.2.5.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

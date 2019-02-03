@@ -20,7 +20,7 @@ public class UserDao {
 	
 	public void addUser(int id, String name, String profession) throws SQLException, ClassNotFoundException {
 		
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("org.postgresql.Driver");
 		con = DriverManager.getConnection(url, databaseUsername, databasePassword);
 		
 		statement = con.prepareStatement(
@@ -33,14 +33,14 @@ public class UserDao {
 		
 	}
 
-	public List<User> getUser(int i) throws SQLException, ClassNotFoundException {
+	public List<User> getUser() throws SQLException, ClassNotFoundException {
 		
-		List<User> user = new ArrayList<>();
+		ArrayList<User> user = new ArrayList<>();
 		
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("org.postgresql.Driver");
 		con = DriverManager.getConnection(url, databaseUsername, databasePassword);
 		
-		ResultSet rs = statement.executeQuery("SELECT * FROM users WHERE id = ?;");
+		ResultSet rs = statement.executeQuery("SELECT * FROM users;");
 		
 		while (rs.next()) {
 			int id = rs.getInt(1);
