@@ -15,7 +15,7 @@ public class UserDao {
 	
 	private PreparedStatement statement;
 	private String databaseUsername = "postgres";
-	private String databasePassword = "Lx0e1utY";
+	private String databasePassword = "postgres";
 	private String url = "jdbc:postgresql://localhost:5432/postgres";
 	
 	public void addUser(int id, String name, String profession) throws SQLException, ClassNotFoundException {
